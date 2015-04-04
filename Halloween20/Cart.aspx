@@ -23,10 +23,8 @@
                     onclick="btnEmpty_Click" CssClass="button" />
             </div>
             <div id="shopbuttons">
-                <asp:Button ID="btnContinue" runat="server"
-                    PostBackUrl="~/Order.aspx" Text="Continue Shopping" CssClass="button" />
-                <asp:Button ID="btnCheckOut" runat="server" Text="Check Out" 
-                    PostBackUrl="~/CheckOut1.aspx" CssClass="button" />
+                <asp:Button ID="btnContinue" runat="server" Text="Continue Shopping" CssClass="button" OnClick="btnContinue_Click" />
+                <asp:Button ID="btnCheckOut" runat="server" Text="Check Out" CssClass="button" OnClick="btnCheckOut_Click" />
             </div>
             <p id="message">
                 <asp:Label ID="lblMessage" runat="server" EnableViewState="False" 

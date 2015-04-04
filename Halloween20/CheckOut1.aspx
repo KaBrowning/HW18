@@ -88,7 +88,7 @@
                     CausesValidation="False" onclick="btnCancel_Click" CssClass="button" />
                 <asp:Button ID="btnContinue" runat="server"
                     Text="Continue Shopping" CausesValidation="False" 
-                    PostBackUrl="~/Order.aspx" CssClass="button" OnClick="btnContinue_Click" />
+                    PostBackUrl="~/Order.aspx" CssClass="button" />
             </p>
     </form>
     </section>
