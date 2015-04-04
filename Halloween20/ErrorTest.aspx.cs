@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+
 
 /// <summary>
-/// 
+/// This class describes the Error Test page
 /// </summary>
+/// <author>Kathryn Browning</author>
+/// <version>April 4, 2015</version>
 public partial class ErrorTest : System.Web.UI.Page
 {
     /// <summary>
