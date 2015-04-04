@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Web.UI.WebControls;
 
 /// <summary>
 /// This class describes the Custom Error page
@@ -26,6 +25,10 @@ public partial class Error : System.Web.UI.Page
         }
 
         var ex = (Exception) Session["Exception"];
-        this.lblOutputMessage.Text = ex.Message;
+
+        if (ex != null)
+        {
+            this.lblOutputMessage.Text = ex.Message;
+        }
     }
 }
