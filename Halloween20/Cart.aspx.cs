@@ -91,6 +91,11 @@ public partial class Cart : Page
         Response.Redirect("Order.aspx");
     }
 
+    /// <summary>
+    /// Handles the Click event of the btnCheckOut control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnCheckOut_Click(object sender, EventArgs e)
     {
         Response.Redirect("CheckOut1.aspx");
@@ -109,7 +114,10 @@ public partial class Cart : Page
     /// <summary>
     /// Determines whether this instance is expired.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>
+    /// True if the Session State and View State times are the
+    /// same, false if otherwise. 
+    /// </returns>
     private bool IsExpired()
     {
         if (Session["Cart_TimeStamp"] == null)

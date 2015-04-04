@@ -131,18 +131,13 @@ public partial class CheckOut1 : Page
     /// <returns></returns>
     private bool CustomerModified()
     {
-        if (this._dvCustomer[0]["FirstName"].ToString() != this.txtFirstName.Text ||
-            this._dvCustomer[0]["LastName"].ToString() != this.txtLastName.Text ||
-            this._dvCustomer[0]["Address"].ToString() != this.txtAddress.Text ||
-            this._dvCustomer[0]["City"].ToString() != this.txtCity.Text ||
-            this._dvCustomer[0]["State"].ToString() != this.txtState.Text ||
-            this._dvCustomer[0]["ZipCode"].ToString() != this.txtZipCode.Text ||
-            this._dvCustomer[0]["PhoneNumber"].ToString() != this.txtPhone.Text)
-        {
-            return true;
-        }
-        else
-            return false;
+        return this._dvCustomer[0]["FirstName"].ToString() != this.txtFirstName.Text ||
+               this._dvCustomer[0]["LastName"].ToString() != this.txtLastName.Text ||
+               this._dvCustomer[0]["Address"].ToString() != this.txtAddress.Text ||
+               this._dvCustomer[0]["City"].ToString() != this.txtCity.Text ||
+               this._dvCustomer[0]["State"].ToString() != this.txtState.Text ||
+               this._dvCustomer[0]["ZipCode"].ToString() != this.txtZipCode.Text ||
+               this._dvCustomer[0]["PhoneNumber"].ToString() != this.txtPhone.Text;
     }
 
     /// <summary>
