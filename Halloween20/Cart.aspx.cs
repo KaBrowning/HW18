@@ -72,4 +72,14 @@ public partial class Cart : System.Web.UI.Page
         this._cart.Clear();
         this.lstCart.Items.Clear();
     }
+
+    /// <summary>
+    /// Stores the current time.
+    /// </summary>
+    private void StoreCurrentTime()
+    {
+        var dtm = DateTime.Now;
+        ViewState.Add("TimeStamp", dtm);
+        Session.Add("Cart_TimeStamp", dtm);
+    }
 }
