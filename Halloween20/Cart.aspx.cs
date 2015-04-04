@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI;
 
 /// <summary>
 /// This class describes the Cart page
@@ -9,7 +10,7 @@
 /// <version>
 /// Spring 2015
 /// </version>
-public partial class Cart : System.Web.UI.Page
+public partial class Cart : Page
 {
     private CartItemList _cart;
 
@@ -113,13 +114,8 @@ public partial class Cart : System.Web.UI.Page
     {
         if (Session["Cart_TimeStamp"] == null)
             return false;
-        else if (ViewState["TimeStamp"] == null)
+        if (ViewState["TimeStamp"] == null)
             return false;
-        else if (ViewState["TimeStamp"].ToString() == Session["Cart_TimeStamp"].ToString())
-            return false;
-        else
-        {
-            return true;
-        }
+        return ViewState["TimeStamp"].ToString() != Session["Cart_TimeStamp"].ToString();
     }
 }

@@ -16,11 +16,11 @@
      <form id="form1" runat="server">
 
     
-         <asp:Button ID="btnException" runat="server" Text="Generate Exception" CssClass="button" />
+         <asp:Button ID="btnException" runat="server" Text="Generate Exception" CssClass="buttons" OnClick="btnException_Click" />
          <br/>
          <br/>
          <br/>
-         <asp:Button ID="btnBrokenLink" runat="server" Text="Broken Link" CssClass="button"/>
+         <asp:Button ID="btnBrokenLink" runat="server" Text="Broken Link" CssClass="buttons"/>
          
 
      </form>
