@@ -20,6 +20,13 @@ public partial class Cart : System.Web.UI.Page
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (this.IsExpired())
+            Response.Redirect("Expired.aspx");
+        else
+        {
+           this.StoreCurrentTime(); 
+        }
+
         this._cart = CartItemList.GetCart();
         if (!IsPostBack)
             this.DisplayCart();
