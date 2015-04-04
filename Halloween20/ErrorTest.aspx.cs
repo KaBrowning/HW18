@@ -28,4 +28,14 @@ public partial class ErrorTest : System.Web.UI.Page
             Response.Redirect("Error.aspx");
         }
     }
+
+    /// <summary>
+    /// Handles the Click event of the btnBrokenLink control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+    protected void btnBrokenLink_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("UnknownPage.aspx");
+    }
 }
