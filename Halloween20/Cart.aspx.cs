@@ -82,4 +82,22 @@ public partial class Cart : System.Web.UI.Page
         ViewState.Add("TimeStamp", dtm);
         Session.Add("Cart_TimeStamp", dtm);
     }
+
+    /// <summary>
+    /// Determines whether this instance is expired.
+    /// </summary>
+    /// <returns></returns>
+    private bool IsExpired()
+    {
+        if (Session["Cart_TimeStamp"] == null)
+            return false;
+        else if (ViewState["TimeStamp"] == null)
+            return false;
+        else if (ViewState["TimeStamp"].ToString() == Session["Cart_TimeStamp"].ToString())
+            return false;
+        else
+        {
+            return true;
+        }
+    }
 }
