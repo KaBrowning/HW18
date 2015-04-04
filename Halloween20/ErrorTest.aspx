@@ -20,7 +20,7 @@
          <br/>
          <br/>
          <br/>
-         <asp:Button ID="btnBrokenLink" runat="server" Text="Broken Link" CssClass="buttons"/>
+         <asp:Button ID="btnBrokenLink" runat="server" Text="Broken Link" CssClass="buttons" OnClick="btnBrokenLink_Click"/>
          
 
      </form>
