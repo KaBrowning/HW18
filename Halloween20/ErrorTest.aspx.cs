@@ -18,7 +18,7 @@ public partial class ErrorTest : System.Web.UI.Page
     {
         try
         {
-            throw new Exception("This is a planned Exception");
+            throw new Exception("This is a planned Exception.");
         }
         catch (Exception ex)
         {

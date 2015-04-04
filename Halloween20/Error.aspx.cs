@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI.WebControls;
 
 /// <summary>
 /// This class describes the Custom Error page
@@ -19,11 +20,12 @@ public partial class Error : System.Web.UI.Page
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["Exception"] == null)
-            Response.Redirect("ErrorTest.aspx");
-        else
+        if (IsPostBack)
         {
-
+            return;
         }
+
+        var ex = (Exception) Session["Exception"];
+        this.lblOutputMessage.Text = ex.Message;
     }
 }
