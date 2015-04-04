@@ -1,0 +1,28 @@
+﻿section {
+    padding-top: 0;
+}
+h2
+{
+    font-size: 110%;
+    margin: .75em 0 .25em;
+}
+label {
+    margin-left: .5em;
+}
+.entry
+{
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+#ddlYear {
+    margin-left: .5em;
+}
+#buttons
+{
+    clear: left;
+    margin-top: 1em;
+}
+#btnAccept, #btnCancel
+{
+    margin-right: 1em;
+}

@@ -1,0 +1,29 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 85%;
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+section {
+    padding: 1em;
+}
+.validator {
+    color: red;
+    margin-left: 1em;
+}
+.button {
+    padding: .25em .5em;
+    margin-right: 1em;
+}
+
+.error {
+    color: cadetblue;
+    font-size: 18px;
+}

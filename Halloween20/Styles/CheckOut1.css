@@ -1,0 +1,22 @@
+﻿label
+{
+    float: left;
+    width: 6em;
+}
+.entry
+{
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+.validator {
+    margin-left: 1em;
+    color: green;
+}
+#buttons
+{
+    margin-top: 20px;
+}
+#btnCheckOut, #btnCancel
+{
+    margin-right: 1em;
+}
